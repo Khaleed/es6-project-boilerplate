@@ -24,13 +24,18 @@ module.exports = {
     // define module loaders
     module: {
         loaders: [
-            // ES6 loader
+            // Babel loader
             {
                 test: /\.jsx?$/,
                 exclude: /(node_modules|bower_components)/,
-                loader: 'babel?optional[]=runtime'
+                loader: 'babel-loader',
+                query: {
+                    plugins: ['transform-runtime'],
+                    presets: ['es2015', 'stage-0']
+                }
             },
-            // JSON loader
+
+           // JSON loader
             {
                 test: /\.json$/,
                 exclude: /(node_modules|bower_components)/,
