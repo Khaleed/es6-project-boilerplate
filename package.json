@@ -1,43 +1,48 @@
 {
-    "name": "es6-boilerplate",
-    "version": "1.0.0",
-    "description": "",
-    "main": "devserver.js",
-    "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "watch": "node devserver.js",
-        "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/Khaleed/es6-project-boilerplate.git"
-    },
-    "keywords": [
-        "es6",
-        "es7",
-        "boilerplate",
-        "hot",
-        "reload",
-        "hmr",
-        "live",
-        "project",
-        "webpack"
-    ],
-    "author": "Khalid Omar Ali",
-    "license": "ISC",
-    "bugs": {
-        "url": "https://github.com/Khaleed/es6-project-boilerplate/issues"
-    },
-    "homepage": "https://github.com/Khaleed/es6-project-boilerplate#readme",
-    "dependencies": {
-        "babel-core": "^6.9.1",
-        "babel-loader": "^6.2.4",
-        "babel-preset-es2015": "^6.9.0",
-        "babel-preset-stage-0": "^6.5.0",
-        "babel-runtime": "^6.9.2",
-        "eslint": "^2.13.0",
-        "extract-text-webpack-plugin": "^1.0.1",
-        "webpack": "^1.13.1",
-        "webpack-dev-server": "^1.14.1"
-    }
+  "name": "es6-boilerplate",
+  "version": "1.0.0",
+  "description": "",
+  "main": "devserver.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "node devserver.js",
+    "deploy": "NODE_ENV=production webpack -p --config webpack.production.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Khaleed/es6-project-boilerplate.git"
+  },
+  "keywords": [
+    "es6",
+    "es7",
+    "boilerplate",
+    "hot",
+    "reload",
+    "hmr",
+    "live",
+    "project",
+    "webpack"
+  ],
+  "author": "Khalid Omar Ali",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Khaleed/es6-project-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Khaleed/es6-project-boilerplate#readme",
+  "dependencies": {
+    "babel-core": "^6.9.1",
+    "babel-loader": "^6.2.4",
+    "babel-plugin-transform-runtime": "^6.9.0",
+    "babel-polyfill": "^6.9.1",
+    "babel-preset-es2015": "^6.9.0",
+    "babel-preset-stage-0": "^6.5.0",
+    "babel-runtime": "^6.9.2",
+    "css-loader": "^0.23.1",
+    "eslint": "^2.13.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "json-loader": "^0.5.4",
+    "sass-loader": "^3.2.0",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  }
 }
