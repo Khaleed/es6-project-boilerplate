@@ -11,8 +11,9 @@ module.exports = {
         'webpack-dev-server/client?http://localhost:3000',
         // save code -> gets injected into page without refresh
         'webpack/hot/dev-server',
+        'babel-polyfill',
         // current app
-        path.resolve(__dirname, 'app', 'index.js')
+        './app/index.js'
     ],
     // where to dump bundled file
     output: {
