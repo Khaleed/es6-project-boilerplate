@@ -25,5 +25,8 @@
     "no-multi-spaces": [0],
     "no-shadow": [0],
     "no-unused-vars": [1],
-  }
+  },
+  "parserOptions": {
+    "sourceType": "module"
+   }
 }
