@@ -50,16 +50,6 @@ module.exports = {
         new ExtractTextPlugin("style.css"),
         // Avoid duplicated stuff
         new webpack.optimize.DedupePlugin(),
-        // Babel loader
-        {
-            test: /\.jsx?$/,
-            exclude: /(node_modules|bower_components)/,
-            loader: 'babel-loader',
-            query: {
-                plugins: ['transform-runtime'],
-                presets: ['es2015', 'stage-0']
-            }
-        },
         // Optimise occurence order
         new webpack.optimize.OccurenceOrderPlugin(),
         // only for production
